@@ -1,52 +1,141 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
-    <title>registrazione esercizio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Registrazione esercizio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #f6d365, #fda085);
+      margin: 0;
+      padding: 40px 20px;
+      color: #333;
+      display: flex;
+      justify-content: center;
+    }
+    form {
+      background: #fff;
+      padding: 25px 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      max-width: 400px;
+      width: 100%;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="date"],
+    select,
+    textarea,
+    input[type="file"] {
+      width: 100%;
+      padding: 8px 10px;
+      border: 1.8px solid #f6a623;
+      border-radius: 6px;
+      box-sizing: border-box;
+      font-size: 1em;
+      margin-bottom: 10px;
+      font-family: inherit;
+    }
+    textarea {
+      resize: vertical;
+      min-height: 60px;
+    }
+    .inline {
+      display: inline-block;
+      margin-right: 15px;
+      font-weight: normal;
+    }
+    input[type="checkbox"] {
+      margin-right: 6px;
+    }
+    button {
+      background-color: #f6a623;
+      border: none;
+      color: white;
+      font-size: 1.1em;
+      padding: 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 15px;
+      width: 100%;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #d17e07;
+    }
+  </style>
 </head>
 <body>
-    <form>
-        cognome:<br>
-        <input type="text" name="cognome"><br><br>
-        nome:<br>
-        <input type="text" name="nome"><br><br>
-        data di nascita:<br>
-        <input type="date" name="datadinascita"><br><br>
-        email:<br>
-        <input type="email" name="email"><br><br>
-        password:<br>
-        <input type="password" name="password"><br><br>
-        regione:<br>
-        <select name="regione">
-            <option>puglia</option>
-            <option>liguria</option>
-            <option>calabria</option>
-            <option>sicilia</option>
-            <option>trentino alto adige</option>
-            <option>valle aosta</option>
-            <option>lombardia</option>
-            <option>friuli-venezia giulia</option>
-            <option>piemonte</option>
-            <option>emilia romagna</option>
-            <option>campania</option>
-            <option>lazio</option>
-            <option>marche</option>
-            <option>toscana</option>
-            <option>abruzzo</option>
-            <option>basilicata</option>
-            <option>molise</option>
-            <option>umbria</option>
-            <option>sardegna</option>
-            <option>veneto</option>
-        </select><br><br>
-        Sesso:<br>
-        <input type="radio" name="sesso" value="maschio"> maschio
-        <input type="radio" name="sesso" value="femmina"> femmina<br><br>
-        <input type="checkbox" name="privacy"> acconsento alla privacy<br><br>
-        note:<br>
-        <textarea name="note"></textarea><br><br>
-        invia CV:<br>
-        <input type="file" name="cv"><br><br>
-        <button>clicca per inviare</button>
-    </form>
+  <form>
+    <label for="cognome">Cognome:</label>
+    <input type="text" id="cognome" name="cognome" />
+
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" />
+
+    <label for="datadinascita">Data di nascita:</label>
+    <input type="date" id="datadinascita" name="datadinascita" />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" />
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" />
+
+    <label for="regione">Regione:</label>
+    <select id="regione" name="regione">
+      <option>puglia</option>
+      <option>liguria</option>
+      <option>calabria</option>
+      <option>sicilia</option>
+      <option>trentino alto adige</option>
+      <option>valle aosta</option>
+      <option>lombardia</option>
+      <option>friuli-venezia giulia</option>
+      <option>piemonte</option>
+      <option>emilia romagna</option>
+      <option>campania</option>
+      <option>lazio</option>
+      <option>marche</option>
+      <option>toscana</option>
+      <option>abruzzo</option>
+      <option>basilicata</option>
+      <option>molise</option>
+      <option>umbria</option>
+      <option>sardegna</option>
+      <option>veneto</option>
+    </select>
+
+    <label>Sesso:</label>
+    <span class="inline">
+      <input type="radio" id="maschio" name="sesso" value="maschio" />
+      <label for="maschio">Maschio</label>
+    </span>
+    <span class="inline">
+      <input type="radio" id="femmina" name="sesso" value="femmina" />
+      <label for="femmina">Femmina</label>
+    </span>
+
+    <p>
+      <input type="checkbox" id="privacy" name="privacy" />
+      <label for="privacy" style="font-weight: normal;">Acconsento alla privacy</label>
+    </p>
+
+    <label for="note">Note:</label>
+    <textarea id="note" name="note"></textarea>
+
+    <label for="cv">Invia CV:</label>
+    <input type="file" id="cv" name="cv" />
+
+    <button type="submit">Clicca per inviare</button>
+  </form>
 </body>
 </html>
