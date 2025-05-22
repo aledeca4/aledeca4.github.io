@@ -1,28 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
-    <title>Esempio di Tabella</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabella di esempio</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #fbc2eb, #a6c1ee); /* sfondo rosa/lilla */
+      color: #2c3e50;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 40px;
+      background-color: rgba(255, 255, 255, 0.85);
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    h3 {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
+    }
+
+    th, td {
+      border: 2px solid #f1c40f;
+      padding: 12px;
+    }
+
+    th {
+      background-color: #f1c40f;
+      color: #fff;
+    }
+
+    td:nth-child(2) {
+      color: blue;
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
     <h3>Tabella di esempio</h3>
-    <table border="3" color="yellow">
-        <tr>
-            <th>Colonna 1</th>
-            <th>Colonna 2</th>
-            <th>Colonna 3</th>
-        </tr>
-        <tr>
-            <td><em>Dato 1</em></td>
-        </tr>
-        <tr>
-            <td><strong>Dato 2</strong></td>
-        </tr>
-        <tr>
-            <td>Dato 3</td>
-            <td color="blue">Dato 4</td>
-            <td>Dato 5</d>
-            <td>Dato 6</td>
-        </tr>
+    <table>
+      <tr>
+        <th>Colonna 1</th>
+        <th>Colonna 2</th>
+        <th>Colonna 3</th>
+      </tr>
+      <tr>
+        <td><em>Dato 1</em></td>
+        <td>—</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td><strong>Dato 2</strong></td>
+        <td>—</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>Dato 3</td>
+        <td>Dato 4</td>
+        <td>Dato 5</td>
+      </tr>
     </table>
+  </div>
 </body>
 </html>
