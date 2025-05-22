@@ -1,22 +1,82 @@
-<html>
-  <head>
-  <body>
-    <center>
-      <img src="https://cdn.ilfaroonline.it/photogallery_new/images/2019/07/aereo-111594.jpg" </img>
-    </center>
-    <hr size="100" widht="5" align="left" color="green"></hr>
-    <p><i> lorem ipsum, dolor</i></p>
-    x <sub>1</sub>
-    y <sup>2</sup>
-    <ul type="square">
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elementi vari</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #74ebd5, #ACB6E5); /* sfondo azzurro/lilla */
+      color: #2c3e50;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 40px;
+      background-color: rgba(255, 255, 255, 0.85);
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(4px);
+    }
+
+    img {
+      width: 100%;
+      max-width: 600px;
+      display: block;
+      margin: 0 auto 30px;
+      border-radius: 10px;
+    }
+
+    hr {
+      height: 5px;
+      background-color: green;
+      border: none;
+      margin: 40px 0;
+    }
+
+    p {
+      font-style: italic;
+      font-size: 1.2em;
+    }
+
+    ul, ol {
+      padding-left: 40px;
+      margin-top: 20px;
+    }
+
+    li {
+      margin: 8px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://cdn.ilfaroonline.it/photogallery_new/images/2019/07/aereo-111594.jpg" alt="aereo">
+    
+    <hr>
+
+    <p><i>lorem ipsum, dolor</i></p>
+
+    <p>
+      x<sub>1</sub> &nbsp;
+      y<sup>2</sup>
+    </p>
+
+    <ul style="list-style-type: square;">
       <li>lorem</li>
       <li>lorem</li>
       <li>lorem</li>
     </ul>
-    <ol typer="A start="4">
+
+    <ol type="A" start="4">
       <li>lorem</li>
       <li>lorem</li>
     </ol>
-  </body>
-  </head>
+  </div>
+</body>
 </html>
+
