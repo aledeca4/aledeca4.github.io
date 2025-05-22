@@ -1,35 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tabella voti</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      background: #fefefe;
+      color: #222;
+      display: flex;
+      justify-content: center;
+    }
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      max-width: 600px;
+    }
+    th, td {
+      border: 1px solid #aaa;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #f4b942;
+      color: white;
+    }
+    td.fail {
+      background-color: #ff6666;
+      color: white;
+      font-weight: bold;
+    }
+  </style>
+</head>
 <body>
- <title>tabella voti</title>
-    <table border="1" width="100%">
-        <tr>
-            <th colspan="2" align="center">elenco studenti e voti</th>
-        </tr>
-        <tr>
-            <th align="center">nome studente</th>
-            <th align="center">voto</th>
-        </tr>
-        <tr>
-            <td align="center">anna rossi</td>
-            <td align="center">9</td>
-        </tr>
-        <tr>
-            <td align="center">marco gialli</td>
-            <td align="center">6</td>
-        </tr>
-        <tr>
-            <td align="center">francesca verdi</td>
-            <td align="center" bgcolor="red">4</td>
-        </tr>
-        <tr>
-            <td align="center">giovanni bianchi</td>
-            <td align="center">8</td>
-        </tr>
-        <tr>
-            <td align="center">luca neri</td>
-            <td align="center" bgcolor="red">2</td>
-        </tr>
-    </table>
+  <table>
+    <tr>
+      <th colspan="2">Elenco studenti e voti</th>
+    </tr>
+    <tr>
+      <th>Nome studente</th>
+      <th>Voto</th>
+    </tr>
+    <tr>
+      <td>Anna Rossi</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>Marco Gialli</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Francesca Verdi</td>
+      <td class="fail">4</td>
+    </tr>
+    <tr>
+      <td>Giovanni Bianchi</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Luca Neri</td>
+      <td class="fail">2</td>
+    </tr>
+  </table>
 </body>
 </html>
