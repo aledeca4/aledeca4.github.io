@@ -1,33 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ricetta Frittata</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f1e3;
+      color: #333;
+      margin: 20px;
+    }
+    h1 {
+      color: #b22222;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 300px;
+      margin-bottom: 20px;
+    }
+    table, th, td {
+      border: 2px solid #b22222;
+    }
+    th, td {
+      padding: 8px 12px;
+      text-align: center;
+    }
+    th {
+      background-color: #ffeb3b;
+      color: #333;
+    }
+    td.difficolta {
+      color: #f57c00; /* arancione */
+      font-weight: bold;
+    }
+    td.costo {
+      color: #fbc02d; /* giallo scuro */
+      font-weight: bold;
+    }
+    ul {
+      max-width: 400px;
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+    ul li {
+      margin-bottom: 6px;
+    }
+    p.section-title {
+      font-weight: bold;
+      margin-bottom: 6px;
+      color: #b22222;
+      text-transform: uppercase;
+    }
+    li.pepe {
+      color: #039be5; /* azzurro */
+      font-style: italic;
+    }
+  </style>
 </head>
 <body>
-    <title color="red">RICETTA PER LA FRITTATA</title><br>
-    <table align="left" cellspacing="3" cellpadding="3" widht="20%" border="1">
-        <tr>
-            <td>Difficoltà</td>
-            <td>Costo</td>
-            <td>Tempo di realizzazione</td>
-        </tr>
-        <tr>
-            <td color="orange">Media</tr>
-            <td color="yellow">Basso</tr>
-            <td>20/25 minuti</tr>
-        </tr>
-    </table>
-    <ul>
-     <p>PER CREARLA</p>   
-        <li>uova medie, circa 8</li> <li>parmigiano reggiano q.b.</li>
-        <li>pecorino da grattuggiare, circa 50g</li> <li>sale fino q.b</li>
-        <li>olio extravergine d'oliva (per ungere la padella) 2 cucchiai</li> 
-    </ul>
-    <ul>
-    <p>PER SPOLVERIZZARE</p>
-        <li color="lightblue">pepe nero q.b (opzionale).</li>
-    </ul>
+  <h1>Ricetta per la Frittata</h1>
+  
+  <table>
+    <tr>
+      <th>Difficoltà</th>
+      <th>Costo</th>
+      <th>Tempo di realizzazione</th>
+    </tr>
+    <tr>
+      <td class="difficolta">Media</td>
+      <td class="costo">Basso</td>
+      <td>20-25 minuti</td>
+    </tr>
+  </table>
+  
+  <p class="section-title">Per crearla</p>
+  <ul>
+    <li>Uova medie, circa 8</li>
+    <li>Parmigiano Reggiano q.b.</li>
+    <li>Pecorino da grattugiare, circa 50g</li>
+    <li>Sale fino q.b.</li>
+    <li>Olio extravergine d'oliva (per ungere la padella), 2 cucchiai</li>
+  </ul>
+
+  <p class="section-title">Per spolverizzare</p>
+  <ul>
+    <li class="pepe">Pepe nero q.b. (opzionale)</li>
+  </ul>
 </body>
 </html>
