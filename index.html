@@ -1,69 +1,77 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sito di Alessandro De Carli</title>
-  <link rel="icon" type="image/x-icon" href="michael-kucharski-WpDvF_Ckxzg-unsplash-1024x683.jpg">
+  <link rel="icon" type="image/x-icon" href="michael-kucharski-WpDvF_Ckxzg-unsplash-1024x683.jpg" />
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f4f9;
       margin: 0;
-      padding: 20px;
-      color: #333;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)),
+                  url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #2c3e50;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      border-radius: 16px;
     }
 
     h1 {
       text-align: center;
-      color: #2c3e50;
+      color: #34495e;
+      font-size: 2.5em;
       margin-bottom: 10px;
+    }
+
+    .subheading {
+      text-align: center;
+      font-style: italic;
+      margin-bottom: 30px;
+      color: #7f8c8d;
     }
 
     p {
       text-align: center;
-      margin: 10px 0;
+      margin: 12px 0;
     }
 
     a {
       text-decoration: none;
-      color: #3498db;
+      color: #2980b9;
       font-weight: bold;
-      padding: 8px 16px;
-      border: 2px solid transparent;
-      border-radius: 6px;
-      transition: 0.3s;
+      padding: 10px 18px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
       display: inline-block;
     }
 
     a:hover {
       background-color: #3498db;
       color: white;
-      border-color: #2980b9;
-    }
-
-    body > p:first-of-type {
-      font-style: italic;
-      margin-bottom: 30px;
+      transform: scale(1.05);
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
     }
   </style>
 </head>
 <body>
-  <h1>sito di Alessandro De Carli</h1>
-  <p>ad uso didattico</p>
-  <p><a href="intestazioni.html">intestazioni</a></p>
-  <p><a href="tag.html">entra qui</a></p>
-  <p><a href="liste.html">le liste</a></p>
-  <p><a href="esercizio.html">esercizio</a></p>
-  <p><a href="esercitazioni.html">esercizi verifica</a></p>
-  <p><a href="registrazione.html">registrazioni elenco</a></p>
-  <p><a href="tabellavoti.html">tabella dei voti</a></p>
-  <p><a href="macchine.html">macchina</a></p>
-  <p><a href="box.html">box flottanti</a></p>
-  <p><a href="iframe.html">video</a></p>
-  <p><a href="ricette.html">ricetta della frittata</a></p>
-  <p><a href="dropdownmenu.html">drop down menu da sito Wordpress</a></p>
-  <p><a href="bootstrap.html">il mio bootstrap</a></p>
-  <p><a href="modal.html">modale</a></p>
-</body>
-</html>
+  <div class="container">
+    <h1>Sito di Alessandro De Carli</h1>
+    <p class="subheading">ad uso didattico</p>
+
+    <p><a href="intestazioni.html">Intestazioni</a></p>
+    <p><a href="tag.html">Entra qui</a></p>
+    <p><a href="liste.html">Le liste</a></p>
+    <p><a href="esercizio.html">Esercizio</a></p>
+    <p><a href="esercitazioni.html">Esercizi verifica</a></p>
+    <p><a href="registrazione.html">Registrazioni elenco</a></p>
+    <p><a href="tabellavoti.html">Tabella dei voti</a></p>
+    <p><a href="macchine.html">Macchina</a></p>
